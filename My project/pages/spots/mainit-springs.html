@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image with Color Overlay</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/images/hotspr_n.jpg" alt="New Barili Mountain View Resort">
+    <div class="overlay"></div>
+    <h1>The ideal time to visit Maco is during the dry season, from December to May, when the weather is more favorable for outdoor activities and travel.
+
+        Whether you're seeking adventure, relaxation, or a mix of both, Maco offers a diverse range of attractions that cater to all types of travelers.</h1>
+  </div>
+</body>
+</html>

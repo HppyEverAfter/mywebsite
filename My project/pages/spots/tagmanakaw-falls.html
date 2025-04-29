@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image with Color Overlay</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 1rem; 
+      line-height: 1.6;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../../images/falls tagma.jpg" alt="New Barili Mountain View Resort">
+    <div class="overlay"></div>
+    <h1> To reach Tagbanakaw Falls, visitors should make their way to Barangay Panibasan in Maco, Davao de Oro. From there, it's best to ask locals for directions, as the route to the falls may vary and is not always clearly marked. The journey typically includes a mix of road travel and a short, scenic hike, so wearing proper footwear and being prepared for a bit of an adventure is highly recommended. The best time to visit is during the dry season, when trails are more accessible and the water is at its clearest. Be sure to bring essentials like water, snacks, and a change of clothes. As the area remains largely undeveloped, visitors are encouraged to practice responsible tourism—pack out any trash and respect local guidelines to help preserve the natural beauty of the falls for future travelers.</h1>
+</body>
+</html>

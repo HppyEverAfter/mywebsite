@@ -1,0 +1,234 @@
+/* Home Page Specific Styles */
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/download\ \(23\).jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: var(--spacing-lg);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Featured Spots */
+.spot-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.spot-card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.spot-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.spot-card .btn {
+    margin-top: auto;
+}
+
+.view-all-btn {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: var(--light-color);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: var(--spacing-xl);
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--white-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--white-color);
+}
+
+.testimonials-slider {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    padding: var(--spacing-md) 0;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial {
+    flex: 0 0 calc(50% - var(--spacing-lg));
+    scroll-snap-align: start;
+    background-color: var(--light-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.testimonial-content {
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--spacing-md);
+}
+
+.author-info h4 {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.author-info p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+/* Call to Action Section */
+.cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white-color);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cta p {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.2rem;
+}
+
+/* Social Links in Footer */
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .cta h2 {
+        font-size: 2rem;
+    }
+    
+    .cta p {
+        font-size: 1rem;
+    }
+}
+

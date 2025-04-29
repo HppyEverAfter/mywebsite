@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Spots - Escape to Maco</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/spots.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../images/logo.png" alt="Escape to Maco Logo">
+            <h2>Escape to Maco</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="spots.html" class="active">Top Spots</a></li>
+            <li><a href="travel-tips.html">Travel Tips</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Top Spots in Maco</h1>
+            <p>Discover the most beautiful and exciting places to visit in Maco</p>
+        </div>
+    </header>
+
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="nature">Nature</option>
+                        <option value="culture">Cultural</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="leisure">Leisure</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="distance-filter">Distance:</label>
+                    <select id="distance-filter" class="filter-select">
+                        <option value="all">All Distances</option>
+                        <option value="near">Near (0-5 km)</option>
+                        <option value="medium">Medium (5-10 km)</option>
+                        <option value="far">Far (10+ km)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="search-spots">Search:</label>
+                    <input type="text" id="search-spots" placeholder="Search spots...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="spots-section">
+        <div class="container">
+            <div class="spots-grid">
+                <!-- Spot 1 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/tagmanakaw falls.jpg" alt="Waterfall">
+                        <span class="spot-category nature">Nature</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Tagmanakaw Falls</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>  12 to 13 kilometers, from tagum City</span>
+                            <span><i class="fas fa-clock"></i> 1hour min travel</span>
+                        </div>
+                        <p>A majestic waterfall nestled in the lush forests of Maco, perfect for a refreshing swim and nature photography.</p>
+                        <div class="spot-footer">
+                            <a href="spots/tagmanakaw-falls.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spot 2 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/New-Barili-Heights-and-Sights4.jpg" alt="Nature trip">
+                        <span class="spot-category culture">Natural</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>New Barili Mountain View Resort</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 33 km from tagum City</span>
+                            <span><i class="fas fa-clock"></i> 45 minutes to 1 hour</span>
+                        </div>
+                        <p>Explore the breathtaking beauty of New Barili Mountain View Resort, the highest resort in Davao de Oro, where stunning views and serene highland vibes await at 4,500 feet above sea level..</p>
+                        <div class="spot-footer">
+                            <a href="spots/new barili.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spot 3 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/final maco park_n.jpg" alt="Adventure Park">
+                        <span class="spot-category adventure">Adventure</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Maco Adventure Park</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 5 km from town</span>
+                            <span><i class="fas fa-clock"></i> 30 min travel</span>
+                        </div>
+                        <p>Experience thrilling ziplines, rope courses, and other adventure activities surrounded by stunning mountain views.</p>
+                        <div class="spot-footer">
+                            <a href="spots/adventure-park.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spot 4 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/Sabor caffe.jpg" alt="Mountain View">
+                        <span class="spot-category nature">Nature</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Sabor Caffe</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 12 km from town</span>
+                            <span><i class="fas fa-clock"></i> 35 min travel</span>
+                        </div>
+                        <p>Hike the trails of this UNESCO World Heritage site known for its unique biodiversity and pygmy forest.</p>
+                        <div class="spot-footer">
+                            <a href="spots/Sabor.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spot 5 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/mainit fallsn.jpg" alt="Hot Springs">
+                        <span class="spot-category leisure">Leisure</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>  Bilawa Mainit Hot Springs</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 8 km from town</span>
+                            <span><i class="fas fa-clock"></i> 25 min travel</span>
+                        </div>
+                        <p>Relax in the therapeutic natural hot springs known for their healing properties and surrounded by serene landscapes.</p>
+                        <div class="spot-footer">
+                            <a href="spots/mainit-springs.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spot 6 -->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/final coffe tambo_n.jpg" alt="Historical Site">
+                        <span class="spot-category culture">Cultural</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Tambo Cafe</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 1 km from town</span>
+                            <span><i class="fas fa-clock"></i> 5 min travel</span>
+                        </div>
+                        <p>Visit this historical Spanish-era church that showcases beautiful architecture and tells the story of Maco's religious heritage.</p>
+                        <div class="spot-footer">
+                            <a href="spots/tambo.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            
+         <!-- Spot 7-->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/mapaang gulf _n.jpg" alt="Hot Springs">
+                        <span class="spot-category leisure">Leisure</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Mapaang Gulf</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 8 km from town</span>
+                            <span><i class="fas fa-clock"></i> 25 min travel</span>
+                        </div>
+                        <p>Relax in the therapeutic natural hot springs known for their healing properties and surrounded by serene landscapes.</p>
+                        <div class="spot-footer">
+                            <a href="spots/mapaang-gulf.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Spot 8-->
+                 <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/Maco, Davao de Oro.jpg" alt="Hot Springs">
+                        <span class="spot-category leisure">Nature</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Lake Leonard</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 8 km from town</span>
+                            <span><i class="fas fa-clock"></i> 25 min travel</span>
+                        </div>
+                        <p>Relax in the therapeutic natural hot springs known for their healing properties and surrounded by serene landscapes.</p>
+                        <div class="spot-footer">
+                            <a href="spots/lake leonard.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Spot 9-->
+                 <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/cultural mansakan.jpg" alt="Mansaka Tribe">
+                        <span class="spot-category leisure">Cultural</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Mansaka Tribe</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 8 km from town</span>
+                            <span><i class="fas fa-clock"></i> 25 min travel</span>
+                        </div>
+                        <p>Relax in the therapeutic natural hot springs known for their healing properties and surrounded by serene landscapes.</p>
+                        <div class="spot-footer">
+                            <a href="spots/mansaka tribe.html" class="btn outline">View Details</a>
+
+                        </div>
+                    </div>
+                </div>
+                  <!-- Spot 10-->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/Bamboo Eco Park.jpg" alt="Waterfall">
+                        <span class="spot-category nature">Leisure</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Bamboo Eco Park</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>  12 to 13 kilometers, from tagum City</span>
+                            <span><i class="fas fa-clock"></i> 1hour min travel</span>
+                        </div>
+                        <p>A majestic waterfall nestled in the lush forests of Maco, perfect for a refreshing swim and nature photography.</p>
+                        <div class="spot-footer">
+                            <a href="spots/bamboo Grove.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Spot 11 -->
+                 <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/Rancho Luisito.jpg" alt="Waterfall">
+                        <span class="spot-category nature">Leisure</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Lyca Inland Resort</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>  12 to 13 kilometers, from tagum City</span>
+                            <span><i class="fas fa-clock"></i> 1hour min travel</span>
+                        </div>
+                        <p>A majestic waterfall nestled in the lush forests of Maco, perfect for a refreshing swim and nature photography.</p>
+                        <div class="spot-footer">
+                            <a href="spots/Lyca Resort.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+               <!-- Spot 12-->
+                <div class="spot-card">
+                    <div class="spot-thumbnail">
+                        <img src="../images/pasalubong ng bayan.jpg" alt="Waterfall">
+                        <span class="spot-category nature">Culture</span>
+                    </div>
+                    <div class="spot-details">
+                        <h3>Pasalubong ng bayan</h3>
+                        <div class="spot-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>  12 to 13 kilometers, from tagum City</span>
+                            <span><i class="fas fa-clock"></i> 1hour min travel</span>
+                        </div>
+                        <p>A majestic waterfall nestled in the lush forests of Maco, perfect for a refreshing swim and nature photography.</p>
+                        <div class="spot-footer">
+                            <a href="spots/Pasalubong ng Bayan.html" class="btn outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+   
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Escape to Maco</h3>
+                <p>Your ultimate guide to exploring Maco's hidden gems and popular destinations.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="spots.html">Top Spots</a></li>
+                    <li><a href="travel-tips.html">Travel Tips</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> info@escapetomaco.com</li>
+                    <li><i class="fas fa-phone"></i> +63 912 345 6789</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Maco, Davao de Oro, Philippines</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Escape to Maco. All rights reserved. | Designed by Lupoyon Deliht L.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/menu-bar.js"></script>
+</body>
+</html>
